@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="first_practice.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header>
+        <h1>My Work</h1>
+        <div class="header-left">
+          <ul class="list">
+            <li><a class="scroll" id="scroll" href="#About">About</a></li>
+            <li><a class="scroll" id="scroll" href="#Works">Works</a></li>
+            <li><a class="scroll" id="scroll" href="#News">News</a></li>
+            <li><a class="scroll" id="scroll" href="#Contact">Contact</a></li>
+            <li><span class="fa fa-instagram"></span></li>
+          </ul>
+        </div>
+    </header>
+
+    <main>
+      <div class="main-visual">
+      <img src="https://code-step.com/demo/html/portfolio1/img/mainvisual-pc.jpg"></div>
+      <section>
+        <div class="About" id="About">
+          <h1 class="heading">About</h1>
+          <div class="content">
+            <ul class="exp">
+              <li>Xxxxx Ashley</li><br><br>
+              <li>2th Floor xxxxx Building x-x-x Nishiazabu, Minato-ku, Tokyo 106-0031 Japan</li>
+              <li>tel: 000-0000-0000</li>
+              <li>url: www.xxxxxx.jp</li>
+              <li>mail: xxx@xxxxxx.jp</li><br><br>
+              <li>profile text</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="Works" id="Works">
+          <h1 class="heading">Works</h1>
+          <div>
+            <ul class="photo">
+              <li><img src="https://code-step.com/demo/html/portfolio1/img/works1.jpg"></li>
+              <li><img src="https://code-step.com/demo/html/portfolio1/img/works2.jpg"></li>
+              <li><img src="https://code-step.com/demo/html/portfolio1/img/works3.jpg"></li>
+              <li><img src="https://code-step.com/demo/html/portfolio1/img/works4.jpg"></li>
+              <li><img src="https://code-step.com/demo/html/portfolio1/img/works5.jpg"></li>
+              <li><img src="https://code-step.com/demo/html/portfolio1/img/works6.jpg"></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="News" id="News">
+          <h1 class="heading">News</h1>
+          <div class="con">
+            <ul>
+              <li>2020.XX.XX    デザイン雑誌「ＸＸＸＸＸＸ Vol.11』に掲載していただきました。</li>
+              <li>2020.XX.XX    ＸＸ月ＸＸ日から写真集「ＸＸＸＸＸＸＸ」の販売を開始します。</li>
+              <li>2020.XX.XX   【イベント開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト</li>
+              <li>2020.XX.XX    デザイン雑誌「ＸＸＸＸＸＸ Vol.10』に掲載していただきました。</li>
+              <li>2020.XX.XX   【個展開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="Contact" id="Contact">
+          <h1 class="heading">Contact</h1>
+          <div class="form">
+            <ul>
+              <li>NAME</li>
+              <li class="email">E-mail</li>
+              <li class="message">MESSAGE</li>
+            </ul>
+            <div class="area">
+            <ul>
+              <li><input class="send"></li>
+              <li><input class="send"></li>
+              <li><textarea></textarea></li>
+              </ul>
+            <div class="submitt"><input id="submit" type="submit" value="送信"></div>
+
+          </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+    <footer>
+      <p>© 2020 My Work</p>
+    </footer>
+      <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+      <script>
+        $(function(){
+          $(".scroll").click(function(){
+            var id=$(this).attr('href');
+            var position=$(id).offset().top;
+            $("html,body").animate({
+                'scrollTop':position
+              },1000);
+          });
+
+            $("#submit").hover(function(){
+                $("#submit").css('background-color','#24292e');
+                $("#submit").css('background-color','#000000');
+            },function(){
+              $("#submit").css('background-color','#000000');
+              $("#submit").css('background-color','#24292e');
+            });
+
+
+
+
+        });
+
+      </script>
+  </body>
+</html>

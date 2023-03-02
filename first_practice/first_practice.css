@@ -1,0 +1,117 @@
+*{
+  box-sizing: border-box;
+}
+li{
+  list-style: none;
+}
+
+header{
+  width:800px;
+  margin:0 auto;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+.list{
+  display: flex;
+}
+.list li{
+  margin-left: 30px;
+}
+.scroll{
+  color:black;
+}
+
+.About{
+  width:800px;
+  margin:0 auto;
+  padding-top:130px;
+}
+.heading{
+  text-align: center;
+}
+.exp li{
+
+}
+
+.Works{
+  width:800px;
+  margin: 0 auto;
+  padding-top:130px;
+}
+.photo{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.photo li{
+  width:30%;
+}
+.Works img{
+  width:250px;
+  height:150px;
+}
+
+.News{
+  width:800px;
+  margin: 0 auto;
+  padding-top:130px;
+}
+.con li{
+  margin-top: 15px;
+  border-bottom: solid 1px #c8c8c8;
+}
+
+.Contact{
+  width: 800px;
+  margin: 0 auto;
+  padding-top:130px;
+}
+.form{
+  display: flex;
+  width:800px;
+}
+.send{
+  width:600px;
+  border:solid 1px #c8c8c8;
+  height:40px;
+}
+textarea{
+  width: 600px;
+  height:150px;
+  border:solid 1px #c8c8c8;
+}
+.form li{
+  padding-bottom: 15px
+}
+.email{
+  padding-top: 20px;
+}
+.message{
+  padding-top:20px;
+}
+.area li{
+  padding-bottom:15px;
+}
+.submitt{
+text-align: center;
+}
+.submitt input{
+  width: 200px;
+    background-color: #24292e;
+    color: #fff;
+    padding: 15px 0;
+    border: solid 1px #24292e;
+}
+
+footer{
+  width:100%;
+  height:30px;
+  text-align: center;
+  background-color: #24292e
+}
+footer p{
+  color:white;
+  font-size:10px;
+  padding-top:4px;
+}
