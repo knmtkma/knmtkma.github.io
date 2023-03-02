@@ -1,0 +1,95 @@
+@media screen and (max-width:1000px){
+  .img-wrap{
+    margin-left: 210px;
+  }
+  .title-wrapper{
+    position: absolute;
+    top:395px;
+    left:98px;
+  }
+  .img-wrap img{
+    width:700px;
+    height:650px;
+  }
+}
+
+@media screen and (max-width:670px){
+  .visual{
+    flex-flow: column;
+  }
+  .img-wrap{
+    margin: 0 auto;
+  }
+  .img-wrap img{
+    width:477px;
+    height:292px;
+  }
+  .title-wrapper{
+    width:450px;
+    height:160px;
+    position: absolute;
+    top:420px;
+    left:20px;
+  }
+  .title h1{
+    font-size: 28px;
+
+  }
+  .slide{
+    width:470px;
+    height:120px;
+    padding:35px;
+    display: flex;
+  }
+  .detail{
+    padding-left:30px;
+
+  }
+  .lesson-wrapper{
+    flex-flow: column;
+  }
+  .voice-wrapper{
+    flex-flow: column;
+    width:100%;
+  }
+  .element{
+    flex-flow: column;
+  }
+  .baloon{
+    order:1;
+    width:450px;
+    height:150px;
+  }
+  .element-icon{
+    order:2;
+    margin:0 auto;
+  }
+  .blocks{
+    width:95%;
+  }
+  .block{
+    width:95%;
+  }
+  .invitation{
+    width:450px;
+    height: 240px;
+  }
+  footer{
+    height: 530px;
+  }
+  .footer-wrapper{
+    width:100%;
+  }
+  .subject{
+    width:34%;
+    position: relative;
+
+  }
+  .subjects{
+
+  }
+  .ccc{
+    margin-top: 50px;
+    text-align: center;
+  }
+}
